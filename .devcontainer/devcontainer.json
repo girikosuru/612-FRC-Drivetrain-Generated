@@ -1,17 +1,13 @@
 {
   "name": "FRC WPILib Development",
-  // Uses a community-verified container that houses the proper FRC Java/C++ tools
   "image": "://microsoft.com",
-  
   "customizations": {
     "vscode": {
-      // Installs the mandatory extensions into the student's browser VS Code automatically
       "extensions": [
         "wpilibsuite.vscode-wpilib",
         "vscjava.vscode-java-pack"
       ]
     }
   },
-  // Automatically runs an initial code build to pull down libraries when the VM starts
-  "postCreateCommand": "./gradlew build -x test"
+  "postCreateCommand": "chmod +x gradlew && ./gradlew build -x test"
 }
