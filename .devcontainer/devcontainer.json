@@ -1,6 +1,6 @@
 {
   "name": "FRC WPILib Development",
-  "image": "://microsoft.com",
+  "image": "docker.io/library/eclipse-temurin:21-jdk-jammy",
   "customizations": {
     "vscode": {
       "extensions": [
